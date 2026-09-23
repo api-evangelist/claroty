@@ -1,0 +1,29 @@
+# Front Door AI Index — claroty — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: claroty
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: www.claroty.com
+  final_host: www.claroty.com
+  ownership: inherited
+  owner: claroty
+  shares_host_with: null
+  inherited_from: claroty.com
+  verdict: scored
+  score: null
+  host_score: 12
+  density: null
+  words: 2995
+  tiers:
+    agentic: 1
+    core: 11
+    model: 0
+  ambiguous: 10
+  top_terms:
+    AI: 11
+    intelligence: 5
+    automation: 3
+    agent: 2
+    agentic: 1
