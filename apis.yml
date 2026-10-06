@@ -43,7 +43,7 @@ accessModel:
   method: derived
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-18'
+modified: '2026-10-06'
 image: https://web-assets.claroty.com/seo/og-default-2.png
 tags:
 - Company
@@ -62,6 +62,8 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- url: https://www.claroty.com/team82/disclosure-dashboard/feed/atom
+  type: BlogRSS
 - type: TrustCenter
   url: security/claroty-trust-center.yml
 - type: DomainSecurity
