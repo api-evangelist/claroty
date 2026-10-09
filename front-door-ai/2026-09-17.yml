@@ -7,14 +7,17 @@ front_door_ai:
   probed_at: '2026-09-17'
   host: www.claroty.com
   final_host: www.claroty.com
-  ownership: inherited
+  ownership: own
   owner: claroty
   shares_host_with: null
-  inherited_from: claroty.com
+  inherited_from: null
+  alias_of: claroty.com
   verdict: scored
-  score: null
+  score: 12
+  band: 5
+  band_label: prominent
   host_score: 12
-  density: null
+  density: 4.01
   words: 2995
   tiers:
     agentic: 1
