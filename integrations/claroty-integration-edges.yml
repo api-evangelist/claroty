@@ -1,0 +1,90 @@
+generated: '2026-10-14'
+method: searched
+checked:
+- crowdstrike/integrations/crowdstrike-integration-edges.yml
+- microsoft-sentinel/integrations/microsoft-sentinel-integration-edges.yml
+- palo-alto-networks/integrations/palo-alto-networks-integration-edges.yml
+- splunk/integrations/splunk-integration-edges.yml
+source:
+- crowdstrike/integrations/crowdstrike-integration-edges.yml
+- microsoft-sentinel/integrations/microsoft-sentinel-integration-edges.yml
+- palo-alto-networks/integrations/palo-alto-networks-integration-edges.yml
+- splunk/integrations/splunk-integration-edges.yml
+edges:
+- partner_name: CrowdStrike (own)
+  partner: crowdstrike
+  partner_match: mirror
+  mirror_match: domain+name-among-holders
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://marketplace.crowdstrike.com/listings/claroty/
+  mirror_of: crowdstrike/integrations/crowdstrike-integration-edges.yml
+  apps:
+  - Claroty IT/OT Visibility & Threat Detection
+  - Claroty for Falcon LogScale
+  - Claroty xDome Data for Falcon Discover for IoT
+  - Claroty XIoT Asset Data Connector for Falcon Discover for IoT
+  - Medigate Device Security Platform (MDSP)
+  listing_count: 5
+  detected: '2026-10-14'
+  detected_by: mirror-platform-listings.py
+- partner_name: Microsoft Sentinel (own)
+  partner: microsoft-sentinel
+  partner_match: mirror
+  mirror_match: domain+verified
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://github.com/Azure/Azure-Sentinel/tree/master/Solutions/Claroty%20xDome
+  mirror_of: microsoft-sentinel/integrations/microsoft-sentinel-integration-edges.yml
+  apps:
+  - Claroty xDome
+  listing_count: 1
+  detected: '2026-10-14'
+  detected_by: mirror-platform-listings.py
+  category: Security - Threat Intelligence
+  badges:
+  - support-tier:partner
+- partner_name: Palo Alto Networks (own)
+  partner: palo-alto-networks
+  partner_match: mirror
+  mirror_match: domain+name-among-holders
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://cortex.marketplace.pan.dev/marketplace/details/Claroty/
+  mirror_of: palo-alto-networks/integrations/palo-alto-networks-integration-edges.yml
+  apps:
+  - Claroty
+  - Claroty xDome
+  listing_count: 2
+  detected: '2026-10-14'
+  detected_by: mirror-platform-listings.py
+  category: Network Security
+  badges:
+  - support:partner
+  - certification:certified
+- partner_name: Splunk (own)
+  partner: splunk
+  partner_match: mirror
+  mirror_match: domain+name-among-holders
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://splunkbase.splunk.com/app/6488/
+  mirror_of: splunk/integrations/splunk-integration-edges.yml
+  apps:
+  - Claroty xDome Add-on for Splunk
+  listing_count: 1
+  detected: '2026-10-14'
+  detected_by: mirror-platform-listings.py
+  category: addon
