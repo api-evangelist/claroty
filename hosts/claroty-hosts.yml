@@ -1,0 +1,128 @@
+generated: '2026-10-20'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 8
+  own: 7
+  other_domain: 0
+  platform: 1
+  roles:
+  - api
+  - identity
+  - marketing
+  - other
+  - portal
+  - source
+  - website
+hosts:
+- host: api.claroty.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: claroty.com
+  role: api
+  relation: own
+- host: blog.claroty.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types:
+  - Blog
+  serves: []
+  registrable_domain: claroty.com
+  role: marketing
+  relation: own
+- host: claroty.com
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: claroty.com
+  role: other
+  relation: own
+- host: community.claroty.com
+  found_by:
+  - pointer
+  - apis[]
+  - probed
+  - site-links
+  - well-known
+  types:
+  - Login
+  serves:
+  - api
+  - docs
+  registrable_domain: claroty.com
+  role: identity
+  relation: own
+- host: github.com
+  found_by:
+  - pointer
+  - apis[]
+  types:
+  - GitHubOrganization
+  serves:
+  - docs
+  registrable_domain: github.com
+  role: source
+  relation: platform
+- host: login.dashboard.claroty.com
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: claroty.com
+  role: identity
+  relation: own
+- host: portal.claroty.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - docs-index
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - DeveloperPortal
+  - Login
+  serves:
+  - docs
+  - cdn
+  vendor: cloudfront
+  registrable_domain: claroty.com
+  role: portal
+  relation: own
+- host: www.claroty.com
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - BlogRSS
+  - Compliance
+  - Blog
+  - Support
+  - TermsOfService
+  - PrivacyPolicy
+  - Website
+  - Newsroom
+  - Leadership
+  serves:
+  - cdn
+  vendor: fastly
+  registrable_domain: claroty.com
+  role: website
+  relation: own

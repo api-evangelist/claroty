@@ -1,0 +1,22 @@
+openapi: 3.2.0
+info:
+  title: Claroty Health API
+  version: 1.0.0
+  description: 'Operations tagged Health across 2 of this provider''s published API definitions: claroty-jwthenticator-openapi.yaml, claroty-jwthenticator-openapi.yml. Each path carries the servers of the definition it was published in.'
+tags:
+- name: Health
+paths:
+  /health:
+    get:
+      description: Get request to see the server is responding. This is can be used by K8S health checks.
+      operationId: check_health
+      responses:
+        '200':
+          description: Working
+      tags:
+      - Health
+      summary: Check health
+      x-summary-source: derived
+x-refined-from:
+- claroty-jwthenticator-openapi.yaml
+- claroty-jwthenticator-openapi.yml

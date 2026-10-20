@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/claroty/main/json-schema/claroty-jwksresponse-schema.json",
+  "title": "JWKSResponse",
+  "x-generated": "2026-10-20",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/claroty-jwthenticator-openapi.yml#/components/schemas/JWKSResponse",
+  "type": "object",
+  "properties": {
+    "x5c": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "The x509 certificate chain"
+    },
+    "n": {
+      "type": "string",
+      "format": "bytes",
+      "description": "Pem moduluos"
+    },
+    "e": {
+      "type": "string",
+      "format": "bytes",
+      "description": "PEM exponent"
+    },
+    "alg": {
+      "type": "string",
+      "description": "The algorithm for the key"
+    },
+    "kty": {
+      "type": "string",
+      "description": "Key type"
+    },
+    "use": {
+      "type": "string",
+      "description": "How the key is meant to be used"
+    }
+  }
+}

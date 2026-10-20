@@ -1,0 +1,116 @@
+# Claroty
+
+Claroty is the cyber-physical systems (CPS) protection company. Its mission is to secure the systems that underpin physical operations across industrial, healthcare, and enterprise environments — the systems that keep the lights on, factories running, and hospitals operating.
+
+Claroty was founded in 2015 (incubated out of Team8, an Israeli cybersecurity venture studio with roots in Israel's Unit 8200 intelligence unit) by Amir Zilberstein, Galina Antova, and Dr. Benny Porat. The company is headquartered in New York City, with offices and operations worldwide.
+
+## What Claroty Does
+
+Claroty secures the cyber-physical systems that underpin society. This includes:
+
+- **Operational Technology (OT):** Industrial control systems, SCADA, PLCs, and other systems that run factories, power grids, water treatment facilities, and critical infrastructure.
+- **Internet of Medical Things (IoMT):** Connected medical devices and clinical systems inside hospitals and healthcare delivery organizations.
+- **Industrial IoT (IIoT):** Sensors, edge devices, and connected equipment in manufacturing, energy, and utilities.
+- **Building Management Systems (BMS):** HVAC, access control, elevators, and other smart building infrastructure.
+- **Enterprise IoT:** Cameras, printers, and other connected devices found in commercial settings.
+- **IT:** Traditional IT devices and IT systems that are part of the CPS network, such as laptops, cell phones, VoIP phones, etc.
+
+## The Claroty Platform
+
+The Claroty Platform provides comprehensive CPS protection by enabling teams to operationalize five core integrated capabilities:
+
+### 1. Asset Inventory & Visibility
+Delivers deep, accurate visibility into every connected cyber-physical systems device in an organization's environment. Claroty uses multiple passive and active highly flexible dynamic discovery methods to safely profile every asset without disrupting operations.
+
+### 2. Exposure Management
+Uses risk scoring based on business context to help security teams understand and prioritize the vulnerabilities and exposures that matter most. Claroty factors in vulnerability severity, ransomware association, network reachability, and asset criticality to surface actionable risk intelligence.
+
+### 3. Network Protection
+Automates policy creation and visualized network communication to enable segmentation and Zero Trust architectures that minimize the CPS attack surface. Claroty helps organizations design, validate, and continuously monitor segmentation to limit lateral movement and mitigate risk to legacy devices.
+
+### 4. Secure Access
+Provides frictionless, vendor-agnostic remote access to cyber-physical assets for internal and third-party engineers. Claroty's secure access capabilities enforce least-privilege principles to control all remote access sessions without introducing risk.
+
+### 5. Threat Detection & Response
+Continuously monitors CPS environments for behavioral anomalies, known attack patterns, and suspicious activity. When threats are detected, Claroty integrates with enterprise SOC tooling to accelerate investigation and response.
+
+## Platform Deployment Options
+
+- **Claroty xDome** — A cloud-native, SaaS-delivered platform for organizations seeking scalability and reduced infrastructure overhead. Also available as Claroty xDome for Healthcare with clinical-specific device management capabilities.
+- **Claroty Continuous Threat Detection (CTD)** — An on-premises deployment option for organizations with strict data residency or air-gapped requirements.
+- **Claroty xDome Secure Access** — A unified product to manage and control third-party remote access without deploying disjointed point solutions, offered either on-premise or as a SaaS. Integration with xDome adds risk-based access controls.
+
+## Claire — AI-Powered CPS Security
+
+Claroty Claire is the industry's first CPS-native AI security agent, embedded within the Claroty Platform. Claire synthesizes data across an organization's entire CPS estate to provide contextual risk insights, automate routine analysis tasks, and accelerate risk-based decision-making. Claire is designed to act as an always-on security analyst that intrinsically understands the unique complexities of CPS environments.
+
+## Team82 & Global Research
+
+Team82 is Claroty's in-house threat and vulnerability research division, recognized as one of the most prolific CPS vulnerability research groups in the world. Their intelligence feeds directly into the Claroty Platform.
+
+### Recent Research Highlights
+
+- **State of CPS Security 2025 — OT Exposures:** Analysis of nearly 1 million OT devices revealed over 111,000 devices containing Known Exploitable Vulnerabilities (KEVs), with 68% of those KEVs linked to ransomware groups.
+- **State of CPS Security 2025 — Healthcare Exposures:** Analysis of over 2.25 million IoMT devices and 647,000 OT systems across 351 healthcare organizations found that 99% of organizations run systems with known exploited vulnerabilities.
+- **Building Management Systems (2025):** Team82 research revealed that 75% of organizations have BMS devices containing KEVs, and 69% have KEVs explicitly used in confirmed ransomware attacks.
+- **Third-Party Risk (Global State of CPS Security):** Claroty survey research highlighted that 82% of cyber incidents in the past 12 months originated from third-party supplier access to the CPS environment, underscoring the urgent necessity of secure access controls.
+
+## Industries Served
+
+Claroty serves organizations across more than 40 industries globally, including Industrial Manufacturing, Energy & Utilities, Healthcare, Public Sector, Pharmaceuticals, Data Centers, Vertically Integrated Retail, and Transportation & Logistics.
+
+## Scale & Market Presence
+
+- 1,300+ customers deployed globally
+- 24 of the Fortune 100 trust Claroty to secure their cyber-physical systems
+- Over $100 million in Annual Recurring Revenue (ARR), achieved in 2023
+
+## Company History & Milestones
+
+| Year | Milestone |
+|------|-----------|
+| 2015 | Claroty founded in New York City, incubated out of Team8 |
+| 2016 | Emerged from stealth with $32M in initial venture funding |
+| 2018 | Launched the unified Claroty Platform for OT visibility and threat detection |
+| 2021 | Raised $400M Series E led by SoftBank; acquired Medigate to expand into healthcare IoT |
+| 2022 | Completed integration of Medigate, creating the broadest CPS protection portfolio |
+| 2023 | Surpassed $100M in Annual Recurring Revenue |
+| 2024 | Secured $100M in strategic growth financing to scale across critical infrastructure verticals |
+| 2025 | Cybersecurity veteran Dave DeWalt assumed the role of Board Chairman |
+| 2026 | Aided by $150M in Series F funding to continue accelerating its aggressive platform vision |
+
+Total funding raised: Over $885M across all rounds.
+
+## Awards & Analyst Recognition
+
+### Gartner
+- **2026 Gartner® Magic Quadrant™ for CPS Protection Platforms** — Named a Leader for the second year in a row. (Claroty was also named a Leader in the inaugural 2025 report, positioned highest for Ability to Execute and furthest for Completeness of Vision).
+- **2026 Gartner® Market Guide for CPS Secure Remote Access** — Recognized as a Representative Vendor.
+- **Customers’ Choice in the 2026 Gartner® Peer Insights™ Voice of the Customer for CPS Protection Platforms
+
+### Forrester
+- **The Forrester Wave™: Operational Technology Security Solutions, Q3 2026 - Named a Leader.
+- **The Forrester Wave™: IoT Security Solutions, Q3 2025** — Named a Leader.
+- **The Forrester Wave™: Operational Technology Security Solutions, Q2 2024** — Named a Strong Performer.
+
+### KLAS Research
+- **Best in KLAS — Healthcare IoT Security, 2025** — Claroty xDome received the Best in KLAS designation for the fifth consecutive year, the highest honor KLAS Research bestows in the healthcare technology market.
+
+### Forbes
+- **Forbes Cloud 100, 2025** — Named to the Forbes Cloud 100 for the fourth consecutive year.
+
+### GigaOm
+- **GigaOm Radar for Operational Technology (OT) Security, 2025** — Recognized as a Leader.
+
+## Key Partnerships & Ecosystem
+
+Claroty integrates with leading enterprise security, public cloud (like AWS), and IT management platforms to extend CPS visibility into existing security operations workflows. Claroty also maintains robust technology alliances and channel partner programs globally.
+
+## Contact & Resources
+
+[Website](https://claroty.com)
+[Blog](https://claroty.com/blog)
+[Team82 Research](https://claroty.com/team82)
+[Resource Library](https://claroty.com/resources)
+[Careers](https://claroty.com/company/careers)
+[Press & Newsroom](https://claroty.com/company/news)

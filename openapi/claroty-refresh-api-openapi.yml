@@ -1,0 +1,68 @@
+openapi: 3.2.0
+info:
+  title: Claroty Refresh API
+  version: 1.0.0
+  description: 'Operations tagged Refresh across 2 of this provider''s published API definitions: claroty-jwthenticator-openapi.yaml, claroty-jwthenticator-openapi.yml. Each path carries the servers of the definition it was published in.'
+tags:
+- name: Refresh
+paths:
+  /refresh:
+    post:
+      description: Create a new JWT using a refresh token
+      operationId: refresh
+      requestBody:
+        description: Refresh token details
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RefreshRequest'
+      responses:
+        '200':
+          description: New JWT created successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TokenResponse'
+              examples:
+                successfull_refresh_response:
+                  value:
+                    jwt: eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJ0b2tlbl9pZCI6IjkxOWY4OWI4OTBkYjRlNjg5MzA3YzgyYTQ1MjE5Yjg4IiwiaWRlbnRpZmllciI6ImhlbGxvIiwiaWF0IjoxNjAwNjc0ODk2LCJleHAiOjE2MDA2NzY2OTZ9.TRXxbCweJRQlaV_jm2TFlNftfrA0Q5qrPtnMZx_r3y2ZUxIbZQw07n01QM43MTew0Zq9ExftNZbCd0vol8XT7wMakZvZDPokd7Gt9vd5fANWr1LHM-nDx4RVUqA4TfSwPVROrxZjwannsNZ74TCAZMXbmv3p2ZguVRXMnBL1i5F2I8hAweMz26IFuQkfvhTLy5OA-WFVwAvo24X4cAfk2z-QvAcgcrtKNF66UhNCdUdyB7it2SoqNr0qo8GuZuZNB-ej8wM4n189vW_nrV1P2xf0hWyL4adpXZtOUB0gAngGETh4W2YM8sByAp7f2EeNSCwptflHPupvR9fce3ZuOw
+                    refresh_token: null
+        '400':
+          description: Invalid request
+        '403':
+          description: Invalid or expired refresh token
+      tags:
+      - Refresh
+      summary: Refresh
+      x-summary-source: derived
+components:
+  schemas:
+    TokenResponse:
+      type: object
+      required:
+      - jwt
+      properties:
+        jwt:
+          type: string
+          description: A valid JWT that can be used for access
+        refresh_token:
+          type: string
+          description: A token that can be used for refreshing JWT once it expires (without authenticating again)
+    RefreshRequest:
+      type: object
+      required:
+      - refresh_token
+      - identifier
+      properties:
+        refresh_token:
+          type: string
+          description: Refresh token used to verify owner
+        identifier:
+          type: string
+          format: uuid
+          description: A unique client identifier
+x-refined-from:
+- claroty-jwthenticator-openapi.yaml
+- claroty-jwthenticator-openapi.yml

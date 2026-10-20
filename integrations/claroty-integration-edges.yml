@@ -1,5 +1,14 @@
-generated: '2026-10-14'
+generated: '2026-10-20'
 method: searched
+source:
+- crowdstrike/integrations/crowdstrike-integration-edges.yml
+- microsoft-sentinel/integrations/microsoft-sentinel-integration-edges.yml
+- palo-alto-networks/integrations/palo-alto-networks-integration-edges.yml
+- splunk/integrations/splunk-integration-edges.yml
+- https://zapier.com/apps/claroty/integrations
+- https://n8n.io/integrations/claroty/
+- https://composio.dev/toolkits/claroty
+- https://monid.ai/tools/claroty
 checked:
 - crowdstrike/integrations/crowdstrike-integration-edges.yml
 - https://cloudsecurityalliance.org/star/registry
@@ -7,11 +16,12 @@ checked:
 - microsoft-sentinel/integrations/microsoft-sentinel-integration-edges.yml
 - palo-alto-networks/integrations/palo-alto-networks-integration-edges.yml
 - splunk/integrations/splunk-integration-edges.yml
-source:
-- crowdstrike/integrations/crowdstrike-integration-edges.yml
-- microsoft-sentinel/integrations/microsoft-sentinel-integration-edges.yml
-- palo-alto-networks/integrations/palo-alto-networks-integration-edges.yml
-- splunk/integrations/splunk-integration-edges.yml
+- https://composio.dev/toolkits/claroty
+- https://monid.ai/tools/claroty
+- https://n8n.io/integrations/claroty/
+- https://zapier.com/apps/claroty/integrations
+summary: null
+marketplace_apps: []
 edges:
 - partner_name: CrowdStrike (own)
   partner: crowdstrike
@@ -124,3 +134,4 @@ edges:
     detected: '2026-10-20'
   detected_by: sweep-compliance-assurance.py
   first_seen: '2026-10-20'
+templates: []

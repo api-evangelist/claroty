@@ -1,0 +1,22 @@
+openapi: 3.2.0
+info:
+  title: Claroty JW Thenticator API
+  version: 1.0.0
+  description: 'Operations tagged JWThenticator across 2 of this provider''s published API definitions: claroty-jwthenticator-openapi.yaml, claroty-jwthenticator-openapi.yml. Each path carries the servers of the definition it was published in.'
+tags:
+- name: JWThenticator
+paths:
+  /:
+    get:
+      description: Index path, see that the server is up and responding.
+      operationId: check_health
+      responses:
+        '200':
+          description: Working
+      tags:
+      - JWThenticator
+      summary: Check health
+      x-summary-source: derived
+x-refined-from:
+- claroty-jwthenticator-openapi.yaml
+- claroty-jwthenticator-openapi.yml

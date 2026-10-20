@@ -1,0 +1,72 @@
+{
+  "@context": {
+    "@vocab": "https://claroty.com/schema#",
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "claroty": "https://claroty.com/schema#",
+    "KeyRequest": "claroty:KeyRequest",
+    "key": {
+      "@id": "claroty:key",
+      "@type": "xsd:string"
+    },
+    "RegisterKeyRequest": "claroty:RegisterKeyRequest",
+    "identifier": {
+      "@id": "claroty:identifier",
+      "@type": "xsd:string"
+    },
+    "AuthRequest": "claroty:AuthRequest",
+    "RefreshRequest": "claroty:RefreshRequest",
+    "refresh_token": {
+      "@id": "claroty:refresh_token",
+      "@type": "xsd:string"
+    },
+    "JWTValidateRequest": "claroty:JWTValidateRequest",
+    "jwt": {
+      "@id": "claroty:jwt",
+      "@type": "xsd:string"
+    },
+    "TokenResponse": "claroty:TokenResponse",
+    "BoolResponse": "claroty:BoolResponse",
+    "result": {
+      "@id": "claroty:result",
+      "@type": "xsd:boolean"
+    },
+    "message": {
+      "@id": "claroty:message",
+      "@type": "xsd:string"
+    },
+    "JWKSResponse": "claroty:JWKSResponse",
+    "x5c": {
+      "@id": "claroty:x5c",
+      "@container": "@list"
+    },
+    "n": {
+      "@id": "claroty:n",
+      "@type": "xsd:string"
+    },
+    "e": {
+      "@id": "claroty:e",
+      "@type": "xsd:string"
+    },
+    "alg": {
+      "@id": "claroty:alg",
+      "@type": "xsd:string"
+    },
+    "kty": {
+      "@id": "claroty:kty",
+      "@type": "xsd:string"
+    },
+    "use": {
+      "@id": "claroty:use",
+      "@type": "xsd:string"
+    }
+  },
+  "@type": "schema:Dataset",
+  "schema:name": "Claroty API JSON-LD context",
+  "schema:description": "A JSON-LD @context for the objects Claroty's own API contract declares: one class per component schema, one property per declared field, typed from the contract. Derived by script (derive-json-ld.py, 2026-10-20) from openapi/claroty-jwthenticator-openapi.yml.",
+  "dcterms:created": "2026-10-20",
+  "dcterms:source": [
+    "openapi/claroty-jwthenticator-openapi.yml"
+  ]
+}

@@ -1,0 +1,26 @@
+openapi: 3.2.0
+info:
+  title: Claroty Validate Request API
+  version: 1.0.0
+  description: 'Operations tagged Validate Request across 2 of this provider''s published API definitions: claroty-jwthenticator-openapi.yaml, claroty-jwthenticator-openapi.yml. Each path carries the servers of the definition it was published in.'
+tags:
+- name: Validate Request
+paths:
+  /validate_request:
+    get:
+      description: Endpoint receives an empty request with authentication header, extracts JWT and validates it. This endpoint can be used with as an Nginx auth_request handler.
+      operationId: validate_request
+      responses:
+        '200':
+          description: JWT is valid
+        '401':
+          description: JWT is invalid (bad signature, couldn't decode, or expired)
+        '403':
+          description: Missing authentcation header or invalid request
+      tags:
+      - Validate Request
+      summary: Validate request
+      x-summary-source: derived
+x-refined-from:
+- claroty-jwthenticator-openapi.yaml
+- claroty-jwthenticator-openapi.yml

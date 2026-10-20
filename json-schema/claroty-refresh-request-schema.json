@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/claroty/main/json-schema/claroty-refresh-request-schema.json",
+  "title": "RefreshRequest",
+  "x-generated": "2026-10-20",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/claroty-jwthenticator-openapi.yml#/components/schemas/RefreshRequest",
+  "type": "object",
+  "required": [
+    "refresh_token",
+    "identifier"
+  ],
+  "properties": {
+    "refresh_token": {
+      "type": "string",
+      "description": "Refresh token used to verify owner"
+    },
+    "identifier": {
+      "type": "string",
+      "format": "uuid",
+      "description": "A unique client identifier"
+    }
+  }
+}

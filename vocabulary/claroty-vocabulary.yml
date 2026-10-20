@@ -1,0 +1,50 @@
+generated: '2026-10-20'
+method: derived
+generator: derive-vocabulary.py
+source: openapi/claroty-jwthenticator-openapi.yml
+vocabulary:
+  name: Claroty Domain Vocabulary
+  description: 'Terms declared by Claroty''s own API contract: its resource groups, objects and enumerations, with the contract''s definitions.
+    Derived, not authored.'
+  version: '2026-10-20'
+  terms:
+  - term: KeyRequest
+    definition: 'Object declared by the contract with fields: key.'
+    tags:
+    - Object
+    source: openapi/claroty-jwthenticator-openapi.yml#/components/schemas/KeyRequest
+  - term: RegisterKeyRequest
+    definition: 'Object declared by the contract with fields: key, identifier.'
+    tags:
+    - Object
+    source: openapi/claroty-jwthenticator-openapi.yml#/components/schemas/RegisterKeyRequest
+  - term: AuthRequest
+    definition: 'Object declared by the contract with fields: key, identifier.'
+    tags:
+    - Object
+    source: openapi/claroty-jwthenticator-openapi.yml#/components/schemas/AuthRequest
+  - term: RefreshRequest
+    definition: 'Object declared by the contract with fields: refresh_token, identifier.'
+    tags:
+    - Object
+    source: openapi/claroty-jwthenticator-openapi.yml#/components/schemas/RefreshRequest
+  - term: JWTValidateRequest
+    definition: 'Object declared by the contract with fields: jwt.'
+    tags:
+    - Object
+    source: openapi/claroty-jwthenticator-openapi.yml#/components/schemas/JWTValidateRequest
+  - term: TokenResponse
+    definition: 'Object declared by the contract with fields: jwt, refresh_token.'
+    tags:
+    - Object
+    source: openapi/claroty-jwthenticator-openapi.yml#/components/schemas/TokenResponse
+  - term: BoolResponse
+    definition: 'Object declared by the contract with fields: result, message.'
+    tags:
+    - Object
+    source: openapi/claroty-jwthenticator-openapi.yml#/components/schemas/BoolResponse
+  - term: JWKSResponse
+    definition: 'Object declared by the contract with fields: x5c, n, e, alg, kty, use.'
+    tags:
+    - Object
+    source: openapi/claroty-jwthenticator-openapi.yml#/components/schemas/JWKSResponse

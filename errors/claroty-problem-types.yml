@@ -1,0 +1,31 @@
+generated: '2026-10-20'
+method: derived
+generator: derive-problem-types.py
+source:
+- openapi/claroty-jwthenticator-openapi.yml
+format: custom
+envelope:
+  media_type: null
+  schema: null
+coverage:
+  operations: 9
+  statuses_declared: 3
+problems:
+- status: 400
+  title: Bad Request
+  description: Invalid request
+  operations: 5
+  media_types: []
+  schema: null
+- status: 401
+  title: Unauthorized
+  description: JWT is invalid (bad signature, couldn't decode, or expired)
+  operations: 2
+  media_types: []
+  schema: null
+- status: 403
+  title: Forbidden
+  description: Key is invalid or expired
+  operations: 3
+  media_types: []
+  schema: null

@@ -1,0 +1,63 @@
+openapi: 3.2.0
+info:
+  title: Claroty Is Key Registered API
+  version: 1.0.0
+  description: 'Operations tagged Is Key Registered across 2 of this provider''s published API definitions: claroty-jwthenticator-openapi.yaml, claroty-jwthenticator-openapi.yml. Each path carries the servers of the definition it was published in.'
+tags:
+- name: Is Key Registered
+paths:
+  /is_key_registered:
+    post:
+      description: Check if a key is registered
+      operationId: is_key_registered
+      requestBody:
+        description: The key to check if registered
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/KeyRequest'
+      responses:
+        '200':
+          description: Check completed successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BoolResponse'
+              examples:
+                key_is_registered:
+                  value:
+                    success: true
+                    message: null
+                key_isnt_registered:
+                  value:
+                    success: false
+                    message: null
+        '400':
+          description: Invalid request
+      tags:
+      - Is Key Registered
+      summary: Is key registered
+      x-summary-source: derived
+components:
+  schemas:
+    BoolResponse:
+      type: object
+      required:
+      - result
+      properties:
+        result:
+          type: boolean
+        message:
+          type: string
+    KeyRequest:
+      type: object
+      required:
+      - key
+      properties:
+        key:
+          type: string
+          description: Key to check
+x-refined-from:
+- claroty-jwthenticator-openapi.yaml
+- claroty-jwthenticator-openapi.yml

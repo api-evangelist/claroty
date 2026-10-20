@@ -1,0 +1,68 @@
+openapi: 3.2.0
+info:
+  title: Claroty Authenticate API
+  version: 1.0.0
+  description: 'Operations tagged Authenticate across 2 of this provider''s published API definitions: claroty-jwthenticator-openapi.yaml, claroty-jwthenticator-openapi.yml. Each path carries the servers of the definition it was published in.'
+tags:
+- name: Authenticate
+paths:
+  /authenticate:
+    post:
+      description: Authenticate using a key.
+      operationId: authenticate
+      requestBody:
+        description: Authentication credentials
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AuthRequest'
+      responses:
+        '200':
+          description: Authentication successfull
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TokenResponse'
+              examples:
+                succesfull_auth_response:
+                  value:
+                    jwt: eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJ0b2tlbl9pZCI6IjkxOWY4OWI4OTBkYjRlNjg5MzA3YzgyYTQ1MjE5Yjg4IiwiaWRlbnRpZmllciI6ImhlbGxvIiwiaWF0IjoxNjAwNjc0ODk2LCJleHAiOjE2MDA2NzY2OTZ9.TRXxbCweJRQlaV_jm2TFlNftfrA0Q5qrPtnMZx_r3y2ZUxIbZQw07n01QM43MTew0Zq9ExftNZbCd0vol8XT7wMakZvZDPokd7Gt9vd5fANWr1LHM-nDx4RVUqA4TfSwPVROrxZjwannsNZ74TCAZMXbmv3p2ZguVRXMnBL1i5F2I8hAweMz26IFuQkfvhTLy5OA-WFVwAvo24X4cAfk2z-QvAcgcrtKNF66UhNCdUdyB7it2SoqNr0qo8GuZuZNB-ej8wM4n189vW_nrV1P2xf0hWyL4adpXZtOUB0gAngGETh4W2YM8sByAp7f2EeNSCwptflHPupvR9fce3ZuOw
+                    refresh_token: 858c825cf8b7acae130e1a88c836609da744be15e9d4f5435887d8282dec2a2f7ad3feb88bb0414f54c9f0ec572cd071e88f5ed9b9e64be33944a7933df50dd3
+        '400':
+          description: Invalid request
+        '403':
+          description: Key is invalid or expired
+      tags:
+      - Authenticate
+      summary: Authenticate
+      x-summary-source: derived
+components:
+  schemas:
+    TokenResponse:
+      type: object
+      required:
+      - jwt
+      properties:
+        jwt:
+          type: string
+          description: A valid JWT that can be used for access
+        refresh_token:
+          type: string
+          description: A token that can be used for refreshing JWT once it expires (without authenticating again)
+    AuthRequest:
+      type: object
+      required:
+      - key
+      - identifier
+      properties:
+        key:
+          type: string
+          description: Key used for authentication
+        identifier:
+          type: string
+          format: uuid
+          description: A unique client identifier
+x-refined-from:
+- claroty-jwthenticator-openapi.yaml
+- claroty-jwthenticator-openapi.yml

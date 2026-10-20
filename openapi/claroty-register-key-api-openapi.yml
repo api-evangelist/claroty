@@ -1,0 +1,64 @@
+openapi: 3.2.0
+info:
+  title: Claroty Register Key API
+  version: 1.0.0
+  description: 'Operations tagged Register Key across 2 of this provider''s published API definitions: claroty-jwthenticator-openapi.yaml, claroty-jwthenticator-openapi.yml. Each path carries the servers of the definition it was published in.'
+tags:
+- name: Register Key
+paths:
+  /register_key:
+    post:
+      description: Register a new key to be used during authentication (`/authenticate`)
+      operationId: register_key
+      requestBody:
+        description: The key to register
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RegisterKeyRequest'
+      responses:
+        '201':
+          description: Key registered successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BoolResponse'
+              examples:
+                success_response:
+                  value:
+                    success: true
+                    message: null
+        '400':
+          description: Invalid request
+      tags:
+      - Register Key
+      summary: Register key
+      x-summary-source: derived
+components:
+  schemas:
+    BoolResponse:
+      type: object
+      required:
+      - result
+      properties:
+        result:
+          type: boolean
+        message:
+          type: string
+    RegisterKeyRequest:
+      type: object
+      required:
+      - key
+      - identifier
+      properties:
+        key:
+          type: string
+          description: Key to register
+        identifier:
+          type: string
+          format: uuid
+          description: A unique client identifier
+x-refined-from:
+- claroty-jwthenticator-openapi.yaml
+- claroty-jwthenticator-openapi.yml

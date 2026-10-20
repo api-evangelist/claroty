@@ -1,0 +1,22 @@
+name: Claroty Community MCP Server
+description: Remote MCP endpoint served by the Claroty customer community (community.claroty.com). Anonymous tools/list returns a JSON-RPC error requiring login; the protected-resource metadata advertises OAuth with dynamic client registration and scopes mcp:read / mcp:write. No public tool list is documented.
+generated: '2026-10-20'
+method: probed
+source:
+- https://community.claroty.com/.well-known/oauth-protected-resource
+- https://community.claroty.com/.well-known/oauth-authorization-server
+url: https://community.claroty.com/mcp
+deployment:
+  mode: remote
+  endpoint: https://community.claroty.com/mcp
+  auth: oauth
+  verified: probed
+status: gated
+evidence:
+- url: https://community.claroty.com/mcp
+  status: 200
+  note: 'tools/list -> JSON-RPC -32600 "MCP is not available for guest users. Please log in to access this feature."'
+scopes:
+- mcp:read
+- mcp:write
+tools: []
