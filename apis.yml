@@ -223,6 +223,8 @@ apis:
   humanURL: https://github.com/claroty/jwthenticator
   baseURL: https://{jwthenticator-host}
   tags:
+  - JWKS
+  tags_raw:
   - Jwks
   properties:
   - type: OpenAPI
