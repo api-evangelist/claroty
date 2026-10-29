@@ -64,6 +64,128 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Claroty is a company surfaced as a portfolio company of bessemer-venture-partners, softbank-vision-fund and added to the API Evangelist network as a stub for enrichment. Sector: cybersecurity. This profile is a lead awaiting the enrichment pipeline.
+Claroty is a cybersecurity company that protects cyber-physical systems (CPS) across industrial, healthcare, commercial, and public-sector environments. Its AI-powered platform delivers asset discovery, exposure and vulnerability management, threat detection, and secure remote access for operational technology (OT), IoT, and the extended internet of things (XIoT) that traditional IT security tools cannot adequately protect. Claroty serves more than 1,300 customers across 60+ countries, including 24 of the Fortune 100, and its Team82 research group publishes original vulnerability research and open-source ICS security tooling. This profile was seeded as a venture-portfolio lead and enriched by the API Evangelist pipeline; Claroty publishes no public product API or developer portal, so enrichment is limited to company identity, GitHub open-source presence, and security/compliance posture.
 
-Backed by: bessemer-venture-partners, softbank-vision-fund — https://www.claroty.com/
+**Areas:** Company · Cybersecurity · OT Security · Cyber-Physical Systems · IoT Security · Industrial Control Systems · Threat Detection · Exposure Management · Healthcare Security
+
+## Claroty on APIs.io
+
+Everything profiled for Claroty is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/claroty/](https://apis.io/providers/claroty/)** — or go straight to one of the APIs or properties below.
+
+### APIs (10)
+
+- [Claroty Community MCP](https://apis.io/apis/claroty/community-mcp/) — Remote MCP server on the Claroty customer community, OAuth-gated (scopes mcp:read, mcp:write) and unavailable to guest users.
+- [Claroty Authenticate API](https://apis.io/apis/claroty/claroty-authenticate-api/) — The Authenticate API from Claroty — 1 operation(s) for authenticate.
+- [Claroty Health API](https://apis.io/apis/claroty/claroty-health-api/) — The Health API from Claroty — 1 operation(s) for health.
+- [Claroty Is Key Registered API](https://apis.io/apis/claroty/claroty-is-key-registered-api/) — The Is Key Registered API from Claroty — 1 operation(s) for is key registered.
+- [Claroty Jwks API](https://apis.io/apis/claroty/claroty-jwks-api/) — The Jwks API from Claroty — 1 operation(s) for jwks.
+- [Claroty JW Thenticator API](https://apis.io/apis/claroty/claroty-jwthenticator-api/) — The JWThenticator API from Claroty — 1 operation(s) for jwthenticator.
+- [Claroty Refresh API](https://apis.io/apis/claroty/claroty-refresh-api/) — The Refresh API from Claroty — 1 operation(s) for refresh.
+- [Claroty Register Key API](https://apis.io/apis/claroty/claroty-register-key-api/) — The Register Key API from Claroty — 1 operation(s) for register key.
+- [Claroty Validate API](https://apis.io/apis/claroty/claroty-validate-api/) — The Validate API from Claroty — 1 operation(s) for validate.
+- [Claroty Validate Request API](https://apis.io/apis/claroty/claroty-validate-request-api/) — The Validate Request API from Claroty — 1 operation(s) for validate request.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Agentic access (1)
+
+Which operations an agent can call, which act, and which need a human in the loop.
+
+- [Claroty Agentic Access](https://apis.io/agentic-access/claroty/claroty-agentic-access/)
+
+#### JSON Schema (6)
+
+The data models the API reads and writes.
+
+- [AuthRequest](https://apis.io/schemas/claroty/claroty-auth-request/)
+- [BoolResponse](https://apis.io/schemas/claroty/claroty-bool-response/)
+- [JWKSResponse](https://apis.io/schemas/claroty/claroty-jwksresponse/)
+- [RefreshRequest](https://apis.io/schemas/claroty/claroty-refresh-request/)
+- [RegisterKeyRequest](https://apis.io/schemas/claroty/claroty-register-key-request/)
+- [TokenResponse](https://apis.io/schemas/claroty/claroty-token-response/)
+
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Claroty Context](https://apis.io/jsonld/claroty/claroty-context/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [Claroty API Rules](https://apis.io/rules/claroty/claroty-rules/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Claroty Domain Security](https://apis.io/security/claroty/claroty-domain-security/)
+- [Claroty Trust Center](https://apis.io/security/claroty/claroty-trust-center/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.claroty.com/)
+- [Support](https://www.claroty.com/contact-us)
+- [Blog](https://www.claroty.com/blog)
+- [Compliance](https://www.claroty.com/trust)
+- [Terms of service](https://www.claroty.com/terms-conditions)
+- [Privacy policy](https://www.claroty.com/privacy-policy)
+- [GitHub](https://github.com/claroty)
+
+## API Evangelist rating
+
+**Kin Score 45.3** — developing · rubric 0.24.0 · scored 2026-10-20
+
+| Facet | Score |
+|---|---|
+| Discoverability | 68.3 |
+| Contract quality | 53.0 |
+| Contract governance | 79.1 |
+| Operational transparency | 5.3 |
+| Developer ergonomics | 16.7 |
+| Access clarity | 50.0 |
+
+**Agent readiness 49.9** — agent-ready (gated down from agent-native)
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | unknown |
+| Reversibility Documented | — |
+| MCP Server | documented (partial credit) |
+| Auth Clarity | served (partial credit) |
+| Idempotency | — |
+| Error Semantics | derived (partial credit) |
+| OpenAPI Examples | verified |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | yes |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | served (partial credit) |
+| Protected Resource Metadata | verified |
+| Dynamic Client Registration | yes |
+| Agentic Commerce | — |
+
+**Regulatory alignment 23.4** — Health
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/claroty/](https://apis.io/providers/claroty/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Claroty: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/claroty/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
